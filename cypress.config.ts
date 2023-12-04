@@ -9,7 +9,7 @@ import { defineConfig } from "cypress";
 dotenv.config({ path: ".env.local" });
 dotenv.config();
 
-const awsConfig = require(path.join(__dirname, "./aws-exports-es5.js"));
+const awsConfig = require(path.join(__dirname, "./scripts/mock-aws-exports-es5.js"));
 
 module.exports = defineConfig({
   projectId: "7s5okt",
@@ -17,6 +17,8 @@ module.exports = defineConfig({
     runMode: 2,
   },
   env: {
+    grepFilteredSpecs: true,
+    grepOmitFiltered: true,
     apiUrl: "http://localhost:3001",
     mobileViewportWidthBreakpoint: 414,
     coverage: false,
@@ -71,6 +73,7 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
+      require("@cypress/grep/src/plugin")(on, config);
       const testDataApiEndpoint = `${config.env.apiUrl}/testData`;
 
       const queryDatabase = ({ entity, query }, callback) => {

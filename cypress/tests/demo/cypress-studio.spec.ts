@@ -1,6 +1,6 @@
 import { User } from "models";
 
-describe("Cypress Studio Demo", function () {
+describe("Cypress Studio Demo", { tags: ["smoke"] }, function () {
   beforeEach(function () {
     cy.task("db:seed");
 

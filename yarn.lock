@@ -3407,6 +3407,15 @@
     js-yaml "4.1.0"
     nyc "15.1.0"
 
+"@cypress/grep@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@cypress/grep/-/grep-4.0.1.tgz#bce679f85da286c4979bb9ffc79b2782dc5b75c6"
+  integrity sha512-i3mWy4mG6nxF7m93W0nzsMZkl0PflGa4+SygA9P92tELayYYAaRKlr07I4fo5PnwoPk1H9IEbXoMFJkhfTMxtg==
+  dependencies:
+    debug "^4.3.4"
+    find-test-names "^1.19.0"
+    globby "^11.0.4"
+
 "@cypress/instrument-cra@1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@cypress/instrument-cra/-/instrument-cra-1.4.0.tgz#c62427b9890e67544e86fd5b927cfdca3ad003d2"
@@ -8522,6 +8531,18 @@ find-cache-dir@^3.2.0:
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
 
+find-test-names@^1.19.0:
+  version "1.28.14"
+  resolved "https://registry.yarnpkg.com/find-test-names/-/find-test-names-1.28.14.tgz#bd40a791362ec6e7f5bd015b65b79f939bfda9b6"
+  integrity sha512-ldhfZ4Vy7lpzH0ylYtkNqrT//3gtTns7JNERGIA9fQKcEBIbv8oFAtT1Z3hBgIuGMdHxV+ELLKvNItolgfuDMg==
+  dependencies:
+    "@babel/parser" "^7.23.0"
+    "@babel/plugin-syntax-jsx" "^7.22.5"
+    acorn-walk "^8.2.0"
+    debug "^4.3.3"
+    globby "^11.0.4"
+    simple-bin-help "^1.8.0"
+
 find-up@^4.0.0, find-up@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
@@ -8911,7 +8932,7 @@ globby@11.0.4:
     merge2 "^1.3.0"
     slash "^3.0.0"
 
-globby@^11.0.3, globby@^11.1.0:
+globby@^11.0.3, globby@^11.0.4, globby@^11.1.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
   integrity sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==
@@ -13033,6 +13054,11 @@ sigstore@^1.3.0, sigstore@^1.4.0, sigstore@^1.7.0:
     "@sigstore/protobuf-specs" "^0.1.0"
     "@sigstore/tuf" "^1.0.1"
     make-fetch-happen "^11.0.1"
+
+simple-bin-help@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/simple-bin-help/-/simple-bin-help-1.8.0.tgz#21bb82c6bccd9fa8678f9c0fadf2956b54e2160a"
+  integrity sha512-0LxHn+P1lF5r2WwVB/za3hLRIsYoLaNq1CXqjbrs3ZvLuvlWnRKrUjEWzV7umZL7hpQ7xULiQMV+0iXdRa5iFg==
 
 slash@^2.0.0:
   version "2.0.0"

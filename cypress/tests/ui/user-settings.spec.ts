@@ -1,7 +1,7 @@
 import { User } from "../../../src/models";
 import { isMobile } from "../../support/utils";
 
-describe("User Settings", function () {
+describe("User Settings", { tags: ["smoke"] }, function () {
   beforeEach(function () {
     cy.task("db:seed");
 
