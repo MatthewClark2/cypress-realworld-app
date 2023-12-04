@@ -73,7 +73,7 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
-      require("@cypress/grep/src/plugin")(on, config);
+      require("@cypress/grep/src/plugin")(config);
       const testDataApiEndpoint = `${config.env.apiUrl}/testData`;
 
       const queryDatabase = ({ entity, query }, callback) => {
